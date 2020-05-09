@@ -8,7 +8,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <p>Hi there, I am a</p>
     <h2>UX Designer</h2>
-    <p>Lorem ipsum...</p>
+    <p>
+      {" "}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor
+      sit amet consectetur.
+    </p>
 
     <button>Contact me</button>
   </Layout>
