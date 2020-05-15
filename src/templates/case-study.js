@@ -1,8 +1,7 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Layout, SEO } from "../components/layout"
 
 export default function CaseStudy({ data }) {
   return (

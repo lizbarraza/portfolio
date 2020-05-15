@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-const Header = () => {
+export const Header = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,5 +34,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
