@@ -7,19 +7,21 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { MDXProvider } from "@mdx-js/react"
+import * as customComponents from "../elements"
 
 import { Header } from "./header"
 import { Footer } from "./footer"
 
 export const Layout = ({ children }) => {
   return (
-    <>
+    <MDXProvider components={customComponents}>
       <Header />
 
       <main>{children}</main>
 
       <Footer />
-    </>
+    </MDXProvider>
   )
 }
 
