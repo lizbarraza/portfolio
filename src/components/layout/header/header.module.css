@@ -1,5 +1,5 @@
-@value colours: "../../styles/colours.css";
-@value light_grey from colours;
+@value colors: "../../../styles/colors.css";
+@value light_grey from colors;
 
 .header {
   padding: 20px;
