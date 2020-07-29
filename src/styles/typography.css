@@ -1,0 +1,12 @@
+.default {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.heading {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}

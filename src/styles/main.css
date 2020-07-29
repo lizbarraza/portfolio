@@ -87,6 +87,23 @@ textarea {
      Author's custom styles
      ========================================================================== */
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Default text styles */
+html {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */

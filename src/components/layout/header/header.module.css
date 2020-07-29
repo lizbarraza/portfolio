@@ -1,19 +1,24 @@
 @value colors: "../../../styles/colors.css";
-@value light_grey from colors;
+@value light_grey, white from colors;
 
 .header {
-  padding: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid light_grey;
+  background-color: white;
 }
 
 .title {
   margin: 0;
+  font-size: 16px;
 }
 
 .menu {
   margin-left: auto;
+  font-size: 14px;
 }
 
 .menu ul {
@@ -25,4 +30,8 @@
 .menu li {
   display: inline-block;
   margin-right: 10px;
+}
+
+.menu a {
+  text-decoration: none;
 }
