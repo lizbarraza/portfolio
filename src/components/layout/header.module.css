@@ -1,0 +1,28 @@
+@value colours: "../../styles/colours.css";
+@value light_grey from colours;
+
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid light_grey;
+}
+
+.title {
+  margin: 0;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
