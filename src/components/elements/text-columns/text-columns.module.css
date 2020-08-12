@@ -1,0 +1,7 @@
+.text-columns {
+  display: flex;
+}
+
+.text-column {
+  width: 33%;
+}
