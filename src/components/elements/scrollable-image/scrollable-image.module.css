@@ -1,5 +1,22 @@
 .scrollable-image {
-  height: 200px;
-  width: 500px;
+  position: relative;
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
   overflow-y: auto;
+}
+
+.scrollable-image-frame {
+  position: relative;
+  width: 100%;
+}
+
+.scrollable-image-inner {
+  position: absolute;
+  left: 15.19%;
+  width: 69.78%;
+  top: 12.33%;
+  height: 74.14%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
