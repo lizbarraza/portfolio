@@ -6,3 +6,4 @@
 
 import "normalize.css"
 import "./src/styles/main.css"
+import "./src/styles/typography.css"

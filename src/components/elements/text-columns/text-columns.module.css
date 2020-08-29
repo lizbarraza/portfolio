@@ -1,7 +1,18 @@
+@value variables: "../../../styles/variables.css";
+@value content_width_large from variables;
+
 .text-columns {
   display: flex;
+  max-width: content_width_large;
+  margin: 0 auto;
 }
 
 .text-column {
   width: 33%;
+  padding: 0 30px;
+  border-right: 1px solid;
+}
+
+.text-column:last-child {
+  border-right: none;
 }

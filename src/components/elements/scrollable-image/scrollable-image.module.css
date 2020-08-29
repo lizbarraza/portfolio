@@ -1,7 +1,10 @@
+@value variables: "../../../styles/variables.css";
+@value content_width_large from variables;
+
 .scrollable-image {
   position: relative;
-  width: 75%;
-  max-width: 1200px;
+  width: 70%;
+  max-width: content_width_large;
   margin: 0 auto;
   overflow-y: auto;
 }
