@@ -7,3 +7,4 @@
 import "normalize.css"
 import "./src/styles/main.css"
 import "./src/styles/typography.css"
+import "./src/styles/layout.css"

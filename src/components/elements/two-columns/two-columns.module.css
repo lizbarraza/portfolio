@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   max-width: content_width_full;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .two-column-text {

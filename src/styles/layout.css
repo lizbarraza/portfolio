@@ -1,0 +1,16 @@
+@value variables: "./variables.css";
+@value content_width from variables;
+
+.content-wrapper > p,
+.content-wrapper > h1,
+.content-wrapper > h2,
+.content-wrapper > h3,
+.content-wrapper > h4,
+.content-wrapper > h5,
+.content-wrapper > h6,
+.content-wrapper > ul,
+.content-wrapper > ol {
+  max-width: content_width;
+  margin-left: auto;
+  margin-right: auto;
+}
