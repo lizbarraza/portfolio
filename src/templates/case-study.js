@@ -1,5 +1,6 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { graphql } from "gatsby"
 
 import { Layout, SEO } from "../components/layout"
 import { CaseStudyHeader } from "../components/elements"

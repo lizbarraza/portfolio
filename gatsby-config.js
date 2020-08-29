@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-remark-images`,
+    "gatsby-remark-custom-image-component",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -33,6 +34,19 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+              quality: 80,
+            },
+          },
+          {
+            resolve: "gatsby-remark-custom-image-component",
+            options: {
+              // plugin options
+              componentName: "ScrollableImage",
+              imagePropName: "src",
+              sharpMethod: "fluid",
+              // fluid's arguments
+              quality: 80,
+              maxWidth: 500,
             },
           },
         ],

@@ -1,0 +1,23 @@
+import lodash from "lodash"
+
+const FLUID_FIELDS = [
+  "aspectRatio",
+  "src",
+  "srcSet",
+  "sizes",
+  "base64",
+  "tracedSVG",
+  "srcWebp",
+  "srcSetWebp",
+  "media",
+  "maxWidth",
+  "maxHeight",
+]
+
+/* Converts the result of a directly called sharp.fluid to the parameters required
+ * by the gatsby-image Img component.
+ * Used in conjunction with the plugin gatsby-remark-custom-image-component
+ */
+export function sharpFluidResultToGatsbyImage(sharpFluidResult) {
+  return lodash.pick(sharpFluidResult, FLUID_FIELDS)
+}

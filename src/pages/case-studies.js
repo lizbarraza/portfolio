@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import { Layout, SEO } from "../components/layout"
 
@@ -15,7 +15,7 @@ const CaseStudies = ({ data }) => (
         <li key={node.id}>
           <CaseStudyLink
             title={node.frontmatter.title}
-            path={`case-studies${node.fields.slug}`}
+            path={`/case-studies${node.fields.slug}`}
           />
         </li>
       ))}
