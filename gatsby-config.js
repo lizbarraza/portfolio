@@ -49,6 +49,18 @@ module.exports = {
               maxWidth: 500,
             },
           },
+          {
+            resolve: "gatsby-remark-custom-image-component",
+            options: {
+              // plugin options
+              componentName: "TwoColumnsImage",
+              imagePropName: "src",
+              sharpMethod: "fluid",
+              // fluid's arguments
+              quality: 80,
+              maxWidth: 800,
+            },
+          },
         ],
       },
     },

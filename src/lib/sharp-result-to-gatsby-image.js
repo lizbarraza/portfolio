@@ -19,5 +19,9 @@ const FLUID_FIELDS = [
  * Used in conjunction with the plugin gatsby-remark-custom-image-component
  */
 export function sharpFluidResultToGatsbyImage(sharpFluidResult) {
-  return lodash.pick(sharpFluidResult, FLUID_FIELDS)
+  const converted = lodash.pick(sharpFluidResult, FLUID_FIELDS)
+  if (converted.aspectRatio) {
+    converted.aspectRatio = parseFloat(converted.aspectRatio)
+  }
+  return converted
 }

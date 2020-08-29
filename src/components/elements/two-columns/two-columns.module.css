@@ -1,0 +1,19 @@
+@value variables: "../../../styles/variables.css";
+@value content_width_full from variables;
+
+.two-columns {
+  display: flex;
+  align-items: center;
+  max-width: content_width_full;
+  margin: 0 auto;
+}
+
+.two-column-text {
+  padding: 0 100px;
+  width: 50%;
+}
+
+.two-column-image {
+  padding: 0 100px;
+  width: 50%;
+}

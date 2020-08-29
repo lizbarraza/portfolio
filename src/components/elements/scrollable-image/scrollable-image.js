@@ -13,7 +13,7 @@ export const ScrollableImage = props => {
         className={styles.scrollableImageFrame}
         src={laptopFrameSvg}
       />
-      <div class={styles.scrollableImageInner}>
+      <div className={styles.scrollableImageInner}>
         <Img fluid={sharpFluidResultToGatsbyImage(props)} />
       </div>
     </div>
