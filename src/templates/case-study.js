@@ -14,7 +14,7 @@ export default function CaseStudy({ data }) {
         subtitle={data.mdx.frontmatter.subtitle}
         backgroundColor={data.mdx.frontmatter.header_color}
       ></CaseStudyHeader>
-      <div class="content-wrapper">
+      <div className="content-wrapper">
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </div>
     </Layout>
