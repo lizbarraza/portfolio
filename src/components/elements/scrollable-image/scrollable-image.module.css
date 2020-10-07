@@ -9,6 +9,10 @@
   overflow-y: auto;
 }
 
+.scrollable-image.full-width {
+  width: 100%;
+}
+
 .scrollable-image-frame {
   position: relative;
   width: 100%;

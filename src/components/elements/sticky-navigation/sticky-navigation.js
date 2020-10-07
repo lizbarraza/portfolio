@@ -23,9 +23,12 @@ export const StickyNavigation = ({ children }) => {
     <div>
       <nav className={styles.stickyNav}>
         <ol>
-          {links.map(linkName => (
+          {links.map((linkName, index) => (
             <li key={linkName}>
-              <a href={`#${generateSectionId(linkName)}`}>{linkName}</a>
+              <a href={`#${generateSectionId(linkName)}`}>
+                <span className={styles.stepNumber}>{index + 1}</span>
+                <span className={styles.stepName}>{linkName}</span>
+              </a>
             </li>
           ))}
         </ol>
@@ -37,11 +40,7 @@ export const StickyNavigation = ({ children }) => {
 }
 
 export const StickyNavigationHeader = ({ children }) => {
-  return (
-    <div className={`${styles.stickyNavHeader} content-wrapper`}>
-      {children}
-    </div>
-  )
+  return <div className="content-wrapper">{children}</div>
 }
 
 export const StickyNavigationSection = ({ children, name }) => {

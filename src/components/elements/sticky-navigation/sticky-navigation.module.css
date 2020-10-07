@@ -1,5 +1,75 @@
+@value types: "../../../styles/typography.css";
+
+@value colors: "../../../styles/colors.css";
+@value default_text_color, default_background_color, light_grey2 from colors;
+
 .sticky-nav {
+  composes: heading from types;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sticky-nav ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-nav li {
+  position: relative;
+  width: 180px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sticky-nav li:not(:first-child):before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: -26%;
+  width: 52%;
+  height: 2px;
+  background-color: light_grey2;
+}
+
+.sticky-nav a {
+  text-decoration: none;
+  color: default_text_color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.step-name {
+  display: block;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 20px;
+  border: 2px solid light_grey2;
+  border-radius: 100%;
+  transition: all 300ms ease;
+}
+
+.sticky-nav a:hover .step-number {
+  background-color: default_text_color;
+  border-color: default_text_color;
+  color: default_background_color;
+}
+
+.sticky-nav li:last-child {
+  margin-right: 0;
 }
 
 .sticky-nav-section {
+  padding-top: 1px;
 }

@@ -8,8 +8,12 @@ export const TwoColumns = ({ children }) => {
   return <div className={styles.twoColumns}>{children}</div>
 }
 
-export const TwoColumnsText = ({ children }) => {
-  return <div className={styles.twoColumnText}>{children}</div>
+export const TwoColumnsText = props => {
+  const classNames = [styles.twoColumnText]
+  if (props.reducedPadding !== undefined) {
+    classNames.push(styles.reducedPadding)
+  }
+  return <div className={styles.classNames}>{props.children}</div>
 }
 
 export const TwoColumnsImage = props => {

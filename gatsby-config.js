@@ -83,7 +83,7 @@ module.exports = {
         fonts: [
           {
             family: `Source Sans Pro`,
-            variants: [`700`],
+            variants: [`700`, `600`],
           },
           {
             family: `Noto Serif`,

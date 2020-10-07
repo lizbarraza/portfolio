@@ -1,5 +1,5 @@
 @value colors: "../../../styles/colors.css";
-@value light_grey, white from colors;
+@value light_grey, default_background_color from colors;
 
 .header {
   padding: 10px 20px;
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid light_grey;
-  background-color: white;
+  background-color: default_background_color;
 }
 
 .title {
