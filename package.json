@@ -14,7 +14,7 @@
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sharp": "^2.6.38",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-remark-custom-image-component": "^1.0.2",
     "gatsby-remark-images": "^3.3.32",
     "gatsby-source-filesystem": "^2.3.32",
